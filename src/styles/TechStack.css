@@ -1,0 +1,63 @@
+/* Tech Stack Section Styling */
+.tech-stack-section {
+    background-color: #ffff;
+    padding: 100px 0;
+  }
+  
+  .tech-stack-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 50px;
+  }
+  
+  /* Tech Card Styling */
+  .tech-card {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 200px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .tech-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Tech Icon Styling */
+  .tech-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .tech-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #007bff; /* Adjust icon color */
+  }
+  
+  /* Tech Name Styling */
+  .tech-card h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #343a40;
+    margin: 0;
+  }

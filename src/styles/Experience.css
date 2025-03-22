@@ -1,0 +1,133 @@
+/* Experience Section Styling */
+.experience-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+  }
+  
+  .experience-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 50px;
+  }
+  
+  /* Timeline Styling */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #0d6efd;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  /* Timeline Item Styling */
+  .timeline-item {
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #0d6efd;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  /* Timeline Content Styling */
+  .timeline-content {
+    width: 45%;
+    padding: 20px;
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .timeline-content.left {
+    left: 0;
+    transform: translateX(-20px);
+  }
+  
+  .timeline-content.right {
+    left: 55%;
+    transform: translateX(20px);
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply Animations */
+  .timeline-content.animate.left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+  }
+  
+  .timeline-content.animate.right {
+    animation: fadeInRight 0.8s ease-out forwards;
+  }
+  
+  /* Timeline Card Styling */
+  .timeline-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-card p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  /* Timeline Details Styling */
+  .timeline-details h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-details p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 5px;
+  }
